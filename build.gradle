@@ -9,6 +9,16 @@ buildscript {
 	}
 }
 
+apply plugin: 'java'
+
+repositories {
+    maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+}
+
+dependencies {
+    compile group: 'com.rapidminer.studio', name: 'rapidminer-studio-core', version: '+'
+}
+
 apply plugin: 'com.rapidminer.java-basics'
 apply plugin: 'com.rapidminer.java-publishing.agpl-v3'
 
@@ -144,7 +154,7 @@ dependencies {
 	compile 'com.fasterxml.jackson.core:jackson-databind:2.6.6'
 }
 
-task wrapper(type: Wrapper) { gradleVersion = '2.14.1' }
+task wrapper(type: Wrapper) { gradleVersion = '3.4' }
 
 apply from: 'gradle/wsimport.gradle'
 apply from: 'gradle/props.gradle'

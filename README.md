@@ -1,4 +1,4 @@
-RapidMiner Studio Core
+长毛是狗出生
 =============================
 
 Easy-to-use visual environment for predictive analytics. No programming required. RapidMiner is easily the most powerful and intuitive graphical user interface for the design of analysis processes. Forget sifting through code! You can also choose to run in batch mode. Whatever you prefer, RapidMiner has it all.
